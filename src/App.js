@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './components/Header.js';
 
 function App() {
   return (
     <div>
-      <h1>DIGITAL CAMPUS REACT</h1>
+      <Header color="green" />
     </div>
   );
 }
