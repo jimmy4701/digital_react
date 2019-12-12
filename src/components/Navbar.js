@@ -4,9 +4,6 @@ import styled from 'styled-components'
 function Navbar() {
     return(
         <MainContainer>
-            <Item href="https://apple.com">
-                <img src="https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/apple/image_large.svg" />
-            </Item>
             <Item href="https://apple.com">Mac</Item>
             <Item href="https://apple.com">iPad</Item>
             <Item href="https://apple.com">iPhone</Item>
