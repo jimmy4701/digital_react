@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 function Header(props){
 
+    console.log("HEADER PROPS", props)
+
+
     return(
         <MainContainer>
             <img src={props.image_url || "https://www.apple.com/v/home/er/images/holiday-2019-takeover/holiday_logo__bea2so6p7m76_large.jpg"} alt=""/>
