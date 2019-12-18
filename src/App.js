@@ -3,6 +3,7 @@ import Navbar       from './components/Navbar.js';
 import Header       from './components/Header.js';
 import Rotator      from './components/Rotator.js';
 import styled       from 'styled-components';
+import Bandeau      from './components/Bandeau.js';
 
 import IconLoader from './components/IconLoader'
 
@@ -29,6 +30,9 @@ function App() {
       <RotatorsContainer>
         {widgets.map(current_element => <Rotator {...current_element} />)}
       </RotatorsContainer>
+      <Bandeau title="Un iPhone" subtitle="Un smartphone joli"/>
+      <Bandeau inversed image="https://www.apple.com/v/home/er/images/heroes/iphone-11/hero__dvsxv8smkkgi_largetall.jpg"/>
+      <div style={{margin: "20em 0"}}>e</div>
     </div>
   );
 }

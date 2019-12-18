@@ -5,11 +5,11 @@ import styled from 'styled-components'
 function Rotator(props){
     const [rotation, setRotation] = useState(props.rotation || 0);
 
-    useEffect(() => {
-        document.addEventListener('scroll', () => {
-            setRotation(window.scrollY / 20)
-        })
-    }, [])
+    // useEffect(() => {
+    //     document.addEventListener('scroll', () => {
+    //         setRotation(window.scrollY / 20)
+    //     })
+    // }, [])
 
     return(
         <MainContainer rotation={rotation}>
