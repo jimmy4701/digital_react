@@ -3,14 +3,14 @@ import UserPartial from './UserPartial'
 
 function UsersList(props){
     const [users, setUsers] = useState([
-        {username: "Toto"},
-        {username: "Jimmy"},
-        {username: "Alice"}
+        {messages: [], username: "Toto"},
+        {messages: [], username: "Jimmy", connected: true},
+        {messages: [], username: "Alice"}
     ])
     return(
         <div>
             {users.map(user => <div>
-                <UserPartial user={user} />
+                <UserPartial onClick={() => props.onUserChange(user)} user={user} />
             </div>)}
         </div>
     )

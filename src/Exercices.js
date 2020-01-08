@@ -1,22 +1,22 @@
-import React, {useState} from 'react'
-import UsersList from './components/UsersList'
+import React, {useState}    from 'react'
+import UsersList            from './components/UsersList'
+import TchatRoom            from './components/TchatRoom'
 
 function LandingPage(props){
-    const [signed, setSigned] = useState(false)
+    const [current_user, setCurrentUser] = useState()
 
-    const sign_in = (email, password) => {
-        setSigned(true)
+    const new_message = message => {
+        current_user.messages.push(message)
+        setCurrentUser(current_user)
     }
-
-    console.log('MODIF PAGE')
 
     return(
         <div className="main-container">
             <div id="left-part">
-                <UsersList />
+                <UsersList currentUser={current_user} onUserChange={user => setCurrentUser(user)} />
             </div>
             <div id="right-part">
-                <p>DISCUSSION</p>
+                <TchatRoom currentUser={current_user} onMessage={message => new_message(message)} />
             </div>
         </div>
     )
