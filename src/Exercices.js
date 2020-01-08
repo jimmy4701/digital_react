@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import SigninForm from './components/SigninForm'
+import UsersList from './components/UsersList'
 
 function LandingPage(props){
     const [signed, setSigned] = useState(false)
@@ -13,7 +13,7 @@ function LandingPage(props){
     return(
         <div className="main-container">
             <div id="left-part">
-                <p>MES AMIS</p>
+                <UsersList />
             </div>
             <div id="right-part">
                 <p>DISCUSSION</p>
