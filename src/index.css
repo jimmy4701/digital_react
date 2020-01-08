@@ -18,3 +18,18 @@ body {
 .totalh {
   height: 100vh;
 }
+
+/* CSS for tchat app*/
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+#left-part {
+  flex: 2;
+  border-right: 1px solid grey;
+}
+
+#right-part {
+  flex: 4;
+}
